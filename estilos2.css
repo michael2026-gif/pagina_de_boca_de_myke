@@ -1,0 +1,339 @@
+```css
+/* =========================================================
+   PÁGINA WEB - CLUB ATLÉTICO BOCA JUNIORS
+   Colores principales: azul y dorado
+   ========================================================= */
+
+
+/* Importamos una fuente moderna y fácil de leer
+   desde Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* ---------------------------------------------------------
+   BODY
+   --------------------------------------------------------- */
+
+/* Aplicamos estos estilos a toda la página. */
+body {
+    /* Utilizamos Poppins como fuente principal.
+       Si no carga, se utilizará una fuente sans-serif. */
+    font-family: 'Poppins', sans-serif;
+
+    /* Quitamos el margen que el navegador coloca
+       automáticamente alrededor de la página. */
+    margin: 0;
+
+    /* Color de fondo de la página.
+       Es un gris muy claro para que resalten
+       los colores de Boca. */
+    background-image: url("bandera.jpg");
+
+    /* Color principal de los textos. */
+    color: #222;
+
+    /* Espacio entre las líneas de los textos.
+       1.6 hace que sean más fáciles de leer. */
+    line-height: 1.6;
+
+    /* Agregamos espacio a los costados de la página. */
+    padding: 20px;
+}
+
+
+/* ---------------------------------------------------------
+   TÍTULO PRINCIPAL
+   --------------------------------------------------------- */
+
+/* Estilos para el h1 de la página. */
+h1 {
+    /* Azul inspirado en Boca Juniors. */
+    color: #003b7a;
+
+    /* Centramos el título horizontalmente. */
+    text-align: center;
+
+    /* Aumentamos el tamaño de la letra. */
+    font-size: 36px;
+
+    /* Hacemos la letra más gruesa. */
+    font-weight: 700;
+
+    /* Agregamos una línea dorada debajo del título. */
+    border-bottom: 4px solid #d4af37;
+
+    /* Agregamos espacio debajo del texto
+       antes de que aparezca la línea. */
+    padding-bottom: 10px;
+
+    /* Dejamos espacio debajo del título. */
+    margin-bottom: 25px;
+}
+
+
+/* ---------------------------------------------------------
+   PÁRRAFO
+   --------------------------------------------------------- */
+
+/* Estilos para el párrafo de presentación. */
+p {
+    /* Limitamos el ancho del texto para que
+       sea más cómodo de leer. */
+    max-width: 800px;
+
+    /* Centramos el párrafo.
+       0 = margen arriba y abajo.
+       auto = centra horizontalmente. */
+    margin: 0 auto 25px;
+
+    /* Tamaño de la letra. */
+    font-size: 30px;
+
+    /* Centramos el texto. */
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* ---------------------------------------------------------
+   TEXTO EN NEGRITA
+   --------------------------------------------------------- */
+
+/* Estilo para el texto que está dentro de <strong>. */
+strong {
+    /* Color dorado para destacar "negrita". */
+    color: #d4af37;
+
+    /* Hace que el texto sea más grueso. */
+    font-weight: 700;
+
+}
+
+
+/* ---------------------------------------------------------
+   LISTAS
+   --------------------------------------------------------- */
+
+/* Creamos un diseño de tarjetas para las listas. */
+ul,
+ol {
+    /* Quitamos el estilo predeterminado de las listas. */
+    list-style: none;
+
+    /* Quitamos el espacio interno predeterminado. */
+    padding: 0;
+
+    /* Limitamos el ancho de las listas. */
+    max-width: 500px;
+
+    /* Centramos las listas horizontalmente. */
+    margin: 20px auto;
+
+    /* Fondo blanco para que parezcan tarjetas. */
+    background-color: white;
+
+    /* Espacio entre el contenido y los bordes. */
+    padding: 20px;
+
+    /* Redondeamos las esquinas. */
+    border-radius: 12px;
+
+    /* Agregamos una sombra suave.
+       0 = desplazamiento horizontal.
+       4px = desplazamiento vertical.
+       12px = difuminación.
+       rgba = color negro con transparencia. */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ---------------------------------------------------------
+   ELEMENTOS DE LAS LISTAS
+   --------------------------------------------------------- */
+
+/* Estilos para cada elemento <li>. */
+li {
+    /* Espacio interno de cada elemento. */
+    padding: 12px 15px;
+
+    /* Línea dorada que separa los elementos. */
+    border-bottom: 1px solid #d4af37;
+
+    /* Color azul para el texto. */
+    color: #003b7a;
+
+    /* Hace que el texto sea un poco más grueso. */
+    font-weight: 500;
+}
+
+
+/* Quitamos la línea del último elemento
+   para que quede más limpio. */
+li:last-child {
+    border-bottom: none;
+}
+
+
+/* ---------------------------------------------------------
+   EFECTO HOVER EN LAS LISTAS
+   --------------------------------------------------------- */
+
+/* Cuando pasamos el mouse por encima de un elemento. */
+li:hover {
+    /* Fondo azul de Boca. */
+    background-color: #003b7a;
+
+    /* Texto dorado. */
+    color: #d4af37;
+
+    /* Cambiamos el cursor para indicar
+       que estamos interactuando con el elemento. */
+    cursor: pointer;
+
+    /* Hace que el cambio de color sea suave. */
+    transition: 0.3s ease;
+}
+
+
+/* ---------------------------------------------------------
+   ENLACE
+   --------------------------------------------------------- */
+
+/* Estilos para el enlace hacia informacion.html. */
+a {
+    /* Convertimos el enlace en un bloque.
+       Esto permite controlar mejor su tamaño y posición. */
+    /display: block;
+
+    /* Limitamos el ancho del botón. */
+    width: fit-content;
+
+    /* Centramos el enlace horizontalmente. */
+    margin: 30px auto;
+
+    / Color de fondo azul. */
+   / background-color: #003b7a;
+
+    /* Texto dorado. */
+    /color: #d4af37;
+
+    /* Quitamos el subrayado predeterminado. */
+    text-decoration: none;
+
+    /* Espacio interno del botón.
+       10px arriba/abajo y 20px izquierda/derecha. */
+   / padding: 10px 20px;
+
+    /* Redondeamos las esquinas. */
+    border-radius: 8px;
+
+    /* Hace que el cambio producido por :hover
+       sea suave. */
+    transition: 0.3s ease;
+
+    /* Hace que el texto sea un poco más grueso. */
+   
+}
+
+
+/* Efecto cuando pasamos el mouse sobre el enlace. */
+a:hover {
+     /* Fondo azul de Boca. */
+    background-color: #003b7a;
+
+    /* Texto dorado. */
+    color: #d4af37;
+
+    /* Cambiamos el cursor para indicar
+       que estamos interactuando con el elemento. */
+    cursor: pointer;
+
+    /* Hace que el cambio de color sea suave. */
+    transition: 0.3s ease;
+
+
+/* ---------------------------------------------------------
+   IMAGEN DE LA BOMBONERA
+   --------------------------------------------------------- */
+
+/* Estilos para la imagen bombonera.jpg. */
+img {
+    /* La imagen nunca será más ancha que su contenedor.
+       Esto ayuda a que sea responsive. */
+    max-width: 100%;
+
+    /* Mantiene automáticamente la proporción
+       original de la imagen. */
+    height: auto;
+
+    /* Convertimos la imagen en un elemento de bloque. */
+    display: block;
+
+    /* Centramos la imagen.
+       auto reparte el espacio a izquierda y derecha. */
+    margin: 30px auto;
+
+    /* Redondeamos las esquinas de la imagen. */
+    border-radius: 15px;
+
+    /* Agregamos una sombra suave. */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+
+    /* Una línea dorada alrededor de la imagen. */
+    border: 4px solid #d4af37;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE - CELULARES
+   --------------------------------------------------------- */
+
+/* Estas reglas se aplican cuando la pantalla
+   tiene un ancho de 600 píxeles o menos. */
+@media (max-width: 600px) {
+
+    /* Reducimos el tamaño del título
+       para que entre correctamente en el celular. */
+    h1 {
+        font-size: 27px;
+    }
+
+    /* Reducimos el tamaño del párrafo
+       para que sea más cómodo de leer. */
+    p {
+        font-size: 16px;
+    }
+
+    /* Reducimos el espacio de las listas
+       en pantallas pequeñas. */
+    ul,
+    ol {
+        padding: 15px;
+    }
+
+    /* Reducimos el tamaño de los elementos
+       de las listas. */
+    li {
+        padding: 10px;
+    }
+
+    /* La imagen se adapta automáticamente
+       al ancho disponible del celular. */
+    img {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Reducimos un poco el espacio general
+       de la página. */
+    body {
+        padding: 10px;
+    }
+.boton a{
+  color: red;
+}
+
+  
+}
+```
